@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','StaticPagesController@index')->name('static.index');
+
+Route::get('register','UsersController@create')->name('register');
+
+

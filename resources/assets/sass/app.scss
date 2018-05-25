@@ -1,9 +1,9 @@
+@import "~materialize-css/sass/materialize";
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
-// Variables
-@import "variables";
-
-// Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+/* Custom Stylesheet */
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
