@@ -13,6 +13,9 @@
 
 Route::get('/','StaticPagesController@index')->name('static.index');
 
+
+
+Route::resource('users', 'UsersController');
 Route::get('register','UsersController@create')->name('register');
 
 

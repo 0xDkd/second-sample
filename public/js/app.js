@@ -7073,7 +7073,6 @@ module.exports = __webpack_require__(108);
  */
 __webpack_require__(67);
 __webpack_require__(107);
-__webpack_require__(124);
 
 /***/ }),
 /* 67 */
@@ -12320,32 +12319,6 @@ if ( !noGlobal ) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 109 */,
-/* 110 */,
-/* 111 */,
-/* 112 */,
-/* 113 */,
-/* 114 */,
-/* 115 */,
-/* 116 */,
-/* 117 */,
-/* 118 */,
-/* 119 */,
-/* 120 */,
-/* 121 */,
-/* 122 */,
-/* 123 */,
-/* 124 */
-/***/ (function(module, exports) {
-
-(function ($) {
-    $(function () {
-
-        $('.sidenav').sidenav();
-    }); // end of document ready
-})(jQuery); // end of jQuery name space
 
 /***/ })
 /******/ ]);

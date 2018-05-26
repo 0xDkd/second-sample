@@ -6,4 +6,3 @@
  */
 require('../../../node_modules/jquery/src/jquery');
 require('../../../node_modules/materialize-css/js/materialbox');
-require('../../../resources/assets/js/init');

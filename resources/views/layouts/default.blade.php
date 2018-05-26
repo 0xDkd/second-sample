@@ -6,7 +6,7 @@
     <title>@yield('title','首页') - Laravel Second</title>
 
     <!-- CSS  -->
-    <link rel="stylesheet" href="/css/app.css">
+    <link href="https://cdn.bootcss.com/materialize/1.0.0-rc.1/css/materialize.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet">
 </head>
 <body>
@@ -20,7 +20,9 @@
 
 <!--  Scripts-->
 
-<script src="/js/app.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdn.bootcss.com/materialize/1.0.0-rc.1/js/materialize.min.js"></script>
+<script src="/js/init.js"></script>
 
 </body>
 </html>
