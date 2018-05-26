@@ -9,6 +9,13 @@ use Auth;
 
 class SessionsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('guest',[
+            'only' => ['create']
+        ]);
+    }
+
     public function create()
     {
         return view('sessions.create');
@@ -20,7 +27,7 @@ class SessionsController extends Controller
         $certificate['password'] = $request->password;
         if (Auth::attempt($certificate,$request->has('remember'))){
             session()->flash('info','登录成功');
-            return redirect()->route('users.show',[Auth::user()]);
+            return redirect()->intended(route('users.show',[Auth::user()]));
         }else{
             session()->flash('danger','抱歉,您的用户名密码不匹配');
             return redirect()->back();

@@ -40,7 +40,8 @@ class UserRequest extends FormRequest
             case 'PATCH':
                 {
                     return [
-                        // UPDATE ROLES
+                        'password'=>'nullable|confirmed|min:6',
+                        'name'=> 'required|max:50'
                     ];
                 }
             case 'GET':

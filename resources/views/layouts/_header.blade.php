@@ -13,6 +13,7 @@
                 <!-- Dropdown Structure -->
                 <ul id='dropdown1' class='dropdown-content'>
                     <li><a href="#"><i class="material-icons right">assessment</i> 访问后台 </a></li>
+                    <li><a href="{{ route('users.show',Auth::user()) }}"><i class="material-icons right">recent_actors</i> 个人主页 </a></li>
                     <li><a href="#"><i class="material-icons right">edit</i> 编辑资料 </a></li>
                     <li class="divider"></li>
                     <li><a href="#">
