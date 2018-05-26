@@ -3,7 +3,7 @@
         <div class="col s12 m4 l12">
             <div class="card-panel {{$style}}">
                 <ul>
-                    <h4 class="white-text center-align">{{session()->get($msg)}}</h4>
+                    <h5 class="white-text center-align">{{session()->get($msg)}}</h5>
                 </ul>
             </div>
         </div>

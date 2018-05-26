@@ -4,7 +4,6 @@
             <ul>
                 @foreach($errors->all() as $error)
                     <li >X {{ $error }}</li>
-
                     @endforeach
             </ul>
         </div>

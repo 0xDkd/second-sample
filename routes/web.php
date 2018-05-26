@@ -18,4 +18,9 @@ Route::get('/','StaticPagesController@index')->name('static.index');
 Route::resource('users', 'UsersController');
 Route::get('register','UsersController@create')->name('register');
 
+Route::get('login','SessionsController@create')->name('login');
+Route::post('login','SessionsController@store')->name('login');
+Route::delete('login','SessionsController@destroy')->name('logout');
+
+
 
