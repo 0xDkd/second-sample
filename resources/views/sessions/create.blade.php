@@ -46,7 +46,10 @@
                                     </label>
                                 </div>
                                 <br>
+
+
                                 <div class="card-action">
+                                    <a href="{{route('password.request')}}"> 忘记密码</a><br><br>
                                     <button type="submit" class="waves-effect waves-light btn green darken-1"><i class="material-icons right">input</i>登录</button>
                                 </div>
                             </form>

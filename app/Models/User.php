@@ -33,4 +33,5 @@ class User extends Authenticatable
 
         return "https://cdn.v2ex.com/gravatar/$hash?s=$size";
     }
+    
 }
