@@ -27,11 +27,21 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public function statuses()
+    {
+        return $this->hasMany(Status::class);
+    }
+
     public function gravatar($size = '200')
     {
         $hash = md5(strtolower(trim($this->attributes['email'])));
 
         return "https://cdn.v2ex.com/gravatar/$hash?s=$size";
+    }
+
+    public function feed()
+    {
+        return $this->statuses()->orderBy('created_at','desc');
     }
     
 }
