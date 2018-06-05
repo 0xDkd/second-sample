@@ -12,6 +12,13 @@ class StatusPolicy
 
     public function destroy(User $user , Status $status)
     {
-        return $user->id === $status->user_id;
+
+        if ($user->id == $status->user_id){
+            return true;
+        }
+        if ($user->is_admin){
+            return true;
+        }
+
     }
 }

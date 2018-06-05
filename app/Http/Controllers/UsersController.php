@@ -85,6 +85,20 @@ class UsersController extends Controller
         return back();
     }
 
+    public function followers(User $user)
+    {
+        $users = $user->followers()->paginate(10);
+        $title = '粉丝列表';
+        return view('users.show_follow',compact('users','title'));
+    }
+
+    public function followings(User $user)
+    {
+        $users = $user->followings()->paginate(10);
+        $title= '关注列表';
+        return view('users.show_follow',compact('users','title'));
+    }
+
     protected function sendEmailConfirmationTo($user)
     {
         $view = 'emails.confirm';

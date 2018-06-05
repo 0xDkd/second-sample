@@ -5,6 +5,9 @@
             <div class="col l4 s2  offset-l4">
                 <img src="{{ $user->gravatar('140') }}" alt=" {{ $user->name }} " class="circle responsive-img">
             </div>
+            @if (Auth::user()->isFollowing($user->id))
+                <span class="btn  waves-effect waves-light green">已关注</span>
+            @endif
         </div>
     </div>
     <div class="col s12 m12 12">
@@ -12,8 +15,9 @@
             <div class="card-stacked">
                 <div class="card-content">
                     <div class="center-align"><h5>用户名： {{$user->name}}</h5></div>
-                    <div class="center-align"><h5>关注数：200</h5></div>
-                    <div class="center-align"><h5>粉丝数：200</h5></div>
+                    <div class="center-align"><h5>微博数：{{count($user->statuses)}}</h5></div>
+                    <div class="center-align"><h5>关注数：{{count($user->followings)}}</h5></div>
+                    <div class="center-align"><h5>粉丝数：{{count($user->followers)}}</h5></div>
                 </div>
             </div>
         </div>

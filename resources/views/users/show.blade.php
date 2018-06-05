@@ -9,7 +9,7 @@
             <div class="row">
 
                 @include('shared._user_info')
-
+                @include('shared._user_fixed_action_btn')
             </div>
         </div>
     </div>

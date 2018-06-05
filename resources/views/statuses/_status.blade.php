@@ -1,10 +1,15 @@
 <li class="collection-item avatar">
     <a href="{{route('users.show',$user->id )}}"><img src="{{ $user->gravatar() }}" alt="{{ $user->name }}"
                                                       class="circle"></a>
-    <span class="title"><b>{{ $status->title }}</b></span><br>
-    <p>{{$status->content}}</p>
+    <span class="title"><b>{{ $status->title }}</b></span>
     <br>
-    <b>{{$user->name}}</b>
+    <div class="row">
+        <div class="col s10">
+            <p>{{$status->content}}</p>
+            <br>
+            <b>{{$user->name}}</b>
+        </div>
+    </div>
     <p class="right-align">{{$status->created_at->diffForHumans()}}</p>
     @can('destroy',$status)
         <form action="{{route('statuses.destroy',$status->id)}}" method="POST">
