@@ -1,5 +1,7 @@
 ## Laravel 入门项目（重构版）
 
+> 我回头重新审视了一下入门的项目，**我发现入门项目才是最值得反复学习的项目**！入门项目是最细最认真的讲解了所有的基础知识，真的建议入门项目多做几遍，并且尝试用不同的方法实现，或者自己增添新的功能。
+
 ### 1.截图
 
 ![file](https://lccdn.phphub.org/uploads/images/201806/05/22353/8NOGF8W7cU.png?imageView2/2/w/1240/h/0)![file](https://lccdn.phphub.org/uploads/images/201806/05/22353/CajCxEWZMN.png?imageView2/2/w/1240/h/0)![file](https://lccdn.phphub.org/uploads/images/201806/05/22353/t0lsUOef8g.png?imageView2/2/w/1240/h/0)![file](https://lccdn.phphub.org/uploads/images/201806/05/22353/ox4mNJDTiT.png?imageView2/2/w/1240/h/0)![file](https://lccdn.phphub.org/uploads/images/201806/05/22353/iC1DK4oeLE.png?imageView2/2/w/1240/h/0)![file](https://lccdn.phphub.org/uploads/images/201806/05/22353/4lUd4xz7Gp.png?imageView2/2/w/1240/h/0)![file](https://lccdn.phphub.org/uploads/images/201806/05/22353/pCVz94eUHi.png?imageView2/2/w/1240/h/0)![file](https://lccdn.phphub.org/uploads/images/201806/05/22353/rZbzXfcQQR.png?imageView2/2/w/1240/h/0)
